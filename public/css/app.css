@@ -1,0 +1,26 @@
+.parent{
+    width: 100%;
+    height: 400px;
+    font-size: small;
+}
+.content{
+    width: 85%;
+}
+.sidebar{
+    width: 15%;
+    background-color: green;
+}
+li{
+    color: #fff;
+}
+li .sidlinks:hover{
+    color: black;
+}
+
+a{
+    cursor: pointer;
+}
+
+.width-fit{
+    height: fit-content !important;
+}

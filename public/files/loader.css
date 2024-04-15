@@ -1,0 +1,41 @@
+/* Start Loader */
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f7f9fb;
+  transition: opacity 0.75s, visibility 0.75s;
+  -webkit-transition: opacity 0.75s, visibility 0.75s;
+  -moz-transition: opacity 0.75s, visibility 0.75s;
+}
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.loader::after {
+  content: '';
+  width: 75px;
+  height: 75px;
+  border: 15px solid #ddd;
+  border-top-color: #54621a;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+  -webkit-animation: loading 0.75s ease infinite;
+}
+/* End Loader */
+
+/* Start Keyframes */
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+    -webkit-transform: rotate(0turn);
+    -moz-transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+  }
+}
+/* End Keyframes */
